@@ -1,6 +1,5 @@
 # Dog Hunter 2: Side-Scrolling Edition
 
-![Game Banner](https://placeholder-for-game-banner.png)
 
 ## Overview
 
