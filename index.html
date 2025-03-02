@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Hunter 2: Side-Scrolling Edition</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="game-canvas"></canvas>
+        <div id="ui-container">
+            <div id="score-container">
+                <span>Score: </span><span id="score">0</span>
+            </div>
+            <div id="level-container">
+                <span>Level: </span><span id="level">1</span>
+            </div>
+            <div id="sprint-container">
+                <div id="sprint-label">Sprint:</div>
+                <div id="sprint-meter"></div>
+            </div>
+        </div>
+        <div id="menu-container">
+            <div id="start-menu" class="menu">
+                <h1>Dog Hunter 2</h1>
+                <h2>Side-Scrolling Edition</h2>
+                <button id="start-button">Start Game</button>
+                <button id="continue-button">Continue</button>
+                <div id="controls-info">
+                    <h3>Controls:</h3>
+                    <p>Left/Right Arrow or A/D: Move</p>
+                    <p>Space or W or Up Arrow: Jump</p>
+                    <p>Shift: Sprint</p>
+                </div>
+            </div>
+            <div id="pause-menu" class="menu">
+                <h2>Game Paused</h2>
+                <button id="resume-button">Resume</button>
+                <button id="save-button">Save Game</button>
+                <button id="quit-button">Quit to Menu</button>
+            </div>
+            <div id="game-over-menu" class="menu">
+                <h2>Game Over</h2>
+                <div id="final-score">Score: 0</div>
+                <button id="restart-button">Play Again</button>
+                <button id="menu-button">Back to Menu</button>
+            </div>
+        </div>
+    </div>
+    <script src="js/physics.js"></script>
+    <script src="js/player.js"></script>
+    <script src="js/entities.js"></script>
+    <script src="js/levels.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/game.js"></script>
+</body>
+</html>
